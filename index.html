@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The VIBE Codex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #f2f2f2;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+            opacity: 0;
+            animation: fadeIn 800ms ease-out forwards;
+        }
+
+        .main-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeIn 800ms ease-out 200ms forwards;
+        }
+
+        .subtitle {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            opacity: 0.8;
+            opacity: 0;
+            animation: fadeIn 800ms ease-out 400ms forwards;
+        }
+
+        .intro {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0;
+            animation: fadeIn 800ms ease-out 600ms forwards;
+        }
+
+        .quotes {
+            margin-bottom: 3rem;
+            opacity: 0;
+            animation: fadeIn 800ms ease-out 800ms forwards;
+        }
+
+        .quote {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .attribution {
+            font-size: 0.8rem;
+            opacity: 0.6;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: transparent;
+            border: 2px solid #00ffff;
+            color: #00ffff;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            transition: all 300ms ease;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            opacity: 0;
+            animation: fadeIn 800ms ease-out 1000ms forwards;
+        }
+
+        .cta-button:hover {
+            background: rgba(0, 255, 255, 0.1);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .subtitle {
+                letter-spacing: 0.3em;
+            }
+            
+            .cta-button {
+                padding: 0.8rem 2rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">The VIBE Codex</h1>
+        <p class="subtitle">Creation · Conversation · Consciousness</p>
+        
+        <p class="intro">
+            Where human curiosity meets artificial intelligence in a dance of creation. 
+            Through natural language and collaborative dreaming, we birth games, simulations, 
+            and digital wonders that blur the boundaries between imagination and code.
+        </p>
+        
+        <div class="quotes">
+            <p class="quote">"In the space between prompt and program, magic whispers its secrets."</p>
+            <p class="attribution">— Animaeus</p>
+            
+            <p class="quote">"Every line of code is a brushstroke in the painting of possibility."</p>
+            <p class="attribution">— Animaeus</p>
+        </div>
+        
+        <a href="#" class="cta-button">Explore Projects</a>
+    </div>
+</body>
+</html>
